@@ -1,0 +1,11 @@
+.App {
+  color: #282c34;
+  width: 60%;
+  margin: auto;
+}
+
+.align-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

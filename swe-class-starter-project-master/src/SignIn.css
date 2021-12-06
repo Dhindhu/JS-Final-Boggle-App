@@ -1,0 +1,39 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-login {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+.user-login > * {
+    margin-bottom: 20px!important;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.outer-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.user-error {
+    text-align: center;
+    color: orange;
+}
