@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { auth } from './firebase';
-import ProfilePage from './ProfilePage';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import ProfilePage from './ProfilePage';
+
 
 const Application = () => {
     const [userSignIn, signInSet] = useState(true);

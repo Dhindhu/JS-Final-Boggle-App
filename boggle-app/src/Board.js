@@ -3,20 +3,21 @@ import Paper from "@material-ui/core/Paper";
 import React from 'react';
 import './Board.css';
 
-function Board({board}) {
+
+function Board({ board }) {
 
   function tile(id, letter) {
-    return(
+    return (
       <Grid key={id} item xs={1} className="Tile">
         <Paper elevation={4}>
-         {letter}
+          {letter}
         </Paper>
       </Grid>);
   }
 
   function rowOfTiles(id, rowObj) {
     return (
-      <Grid key={id} container spacing={1} justify="space-around">
+      <Grid key={id} container spacing={1} justifyContent="space-around">
         {Object.keys(rowObj).map((letterKey) => {
           return tile(letterKey + id, rowObj[letterKey])
         })}
@@ -34,12 +35,11 @@ function Board({board}) {
 
   return (
     <div className="Board-div">
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         {gridOfRows(board)}
       </Grid>
     </div>
   );
-
 }
 
 export default Board;
